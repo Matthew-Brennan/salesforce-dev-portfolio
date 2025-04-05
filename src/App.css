@@ -1,3 +1,4 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/design-system/2.21.2/styles/salesforce-lightning-design-system.min.css');
 /* Custom overrides */
 .slds-container_large {
   max-width: 1280px;
@@ -12,4 +13,72 @@
 
 .slds-text-heading_large {
   color: var(--salesforce-dark);
+}
+
+.slds-card {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.slds-progress-bar__value {
+  background-color: var(--brand-colour, #00a1e0) !important;
+}
+
+:root {
+  /* Light theme */
+  --bg-colour: #ffffff;
+  --text-colour: #1c2b39;
+  --card-bg: #f3f3f3;
+  --border-colour: #dddbda;
+  --text-colour-weak: #706e6b;
+  --text-colour-title: #3e3e3c;
+  
+}
+
+[data-theme="dark"] {
+  /* Dark theme */
+  --bg-colour: #1c2b39;
+  --text-colour: #ffffff;
+  --card-bg: #2a3e52;
+  --border-colour: #3e5266;
+  --text-colour-weak: #b0adab; 
+  --text-colour-title: #f3f3f3;
+  --header-colour: #041322;
+}
+
+/* Override SLDS colors */
+.slds-theme_default {
+  background-color: var(--bg-colour) !important;
+  color: var(--text-colour) !important;
+}
+
+.slds-card {
+  background-color: var(--card-bg) !important;
+  border-color: var(--border-colour) !important;
+}
+
+.slds-text-heading_large,
+.slds-text-heading_medium,
+.slds-text-heading_small {
+  color: var(--text-colour) !important;
+}
+
+.slds-progress-bar__value {
+  background-color: var(--brand-colour, #00a1e0) !important;
+}
+
+.slds-text-color_weak {
+  color: var(--text-colour-weak) !important;
+}
+
+.slds-text-title {
+  color: var(--text-colour-title) !important;
+  font-size: 0.875rem !important; /* Maintain original font size */
+}
+
+.slds-global-header {
+  background-color: var(--header-colour) !important;
 }
