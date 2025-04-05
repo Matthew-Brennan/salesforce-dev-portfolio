@@ -21,6 +21,7 @@
 
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--bg-colour) !important;
 }
 
 .slds-progress-bar__value {
@@ -80,5 +81,7 @@ body {
 }
 
 .slds-global-header {
-  background-color: var(--header-colour) !important;
+  background-color: var(--background-colour) !important;
+  webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0);  /*override the box shadow from slds*/
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0); /*override the box shadow from slds*/
 }
