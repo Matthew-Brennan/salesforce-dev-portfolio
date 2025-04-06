@@ -11,7 +11,7 @@ export default function Hero() {
           <div className="slds-col slds-size_1-of-2 slds-medium-size_1-of-3">
             <div className="slds-media__figure">
               <img 
-                src="/profile.jpg" 
+                src="../images/linkedinphoto.jpg" 
                 alt="Salesforce Developer Profile"
                 className="slds-image slds-image_circular"
                 style={{ width: '300px', height: '300px' }}

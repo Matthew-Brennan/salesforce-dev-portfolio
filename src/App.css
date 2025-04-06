@@ -1,4 +1,15 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/design-system/2.21.2/styles/salesforce-lightning-design-system.min.css');
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+
+
 /* Custom overrides */
 .slds-container_large {
   max-width: 1280px;
@@ -84,4 +95,33 @@ body {
   background-color: var(--background-colour) !important;
   webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0);  /*override the box shadow from slds*/
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0); /*override the box shadow from slds*/
+}
+
+/* Text Containment Fixes */
+.slds-card__body {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.slds-text-body_regular {
+  line-height: 1.5;
+  max-width: 100%;
+}
+
+.slds-badge {
+  white-space: normal;
+  max-width: 100%;
+  display: inline-flex;
+}
+
+/* Responsive Text Sizing */
+@media (max-width: 480px) {
+  .slds-text-heading_small {
+    font-size: 1rem;
+  }
+  
+  .slds-text-body_regular {
+    font-size: 0.875rem;
+  }
 }
